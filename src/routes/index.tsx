@@ -65,7 +65,7 @@ function Home() {
         <div className="container-x relative pt-32 pb-20">
           <Reveal>
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.34em] text-primary">
-              Podkarpackie · Małopolskie · Śląskie
+              {"\n"}
             </p>
           </Reveal>
           <Reveal delay={90}>
@@ -149,11 +149,10 @@ function Home() {
                 wyprowadzania się z domu na czas remontu.
               </p>
               <p>
-                Pracujemy na terenie województw <strong>podkarpackiego</strong>,{" "}
-                <strong>małopolskiego</strong> i <strong>śląskiego</strong>, obsługując zarówno domy
-                jednorodzinne, jak i budynki gospodarcze, hale przemysłowe, magazyny i obiekty
-                użyteczności publicznej. Każde zlecenie rozpoczynamy od bezpłatnych oględzin i
-                konkretnej, pisemnej wyceny — bez ukrytych kosztów i bez zobowiązań.
+                Pracujemy na terenie całej Polski, obsługując zarówno domy jednorodzinne, jak i budynki
+                gospodarcze, hale przemysłowe, magazyny i obiekty użyteczności publicznej. Każde zlecenie
+                rozpoczynamy od bezpłatnych oględzin i konkretnej, pisemnej wyceny — bez ukrytych kosztów
+                i bez zobowiązań.
               </p>
             </div>
           </Reveal>
