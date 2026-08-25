@@ -65,7 +65,7 @@ function Home() {
         <div className="container-x relative pt-32 pb-20">
           <Reveal>
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.34em] text-primary">
-              Podkarpackie · Małopolskie · Śląskie
+              {"\n"}
             </p>
           </Reveal>
           <Reveal delay={90}>
