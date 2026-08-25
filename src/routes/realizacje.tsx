@@ -2,9 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Reveal } from "@/components/site/Reveal";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
+import a01 from "@/assets/realizacje/realizacja-01.webp.asset.json";
+import a02 from "@/assets/realizacje/realizacja-02.webp.asset.json";
+import a03 from "@/assets/realizacje/realizacja-03.webp.asset.json";
+import a04 from "@/assets/realizacje/realizacja-04.webp.asset.json";
+import a05 from "@/assets/realizacje/realizacja-05.webp.asset.json";
+import a06 from "@/assets/realizacje/realizacja-06.webp.asset.json";
+import a07 from "@/assets/realizacje/realizacja-07.webp.asset.json";
+import a08 from "@/assets/realizacje/realizacja-08.webp.asset.json";
+import a09 from "@/assets/realizacje/realizacja-09.webp.asset.json";
+import a10 from "@/assets/realizacje/realizacja-10.webp.asset.json";
+import a11 from "@/assets/realizacje/realizacja-11.webp.asset.json";
+import a12 from "@/assets/realizacje/realizacja-12.webp.asset.json";
 
 export const Route = createFileRoute("/realizacje")({
   head: () => ({
@@ -30,12 +39,18 @@ export const Route = createFileRoute("/realizacje")({
 });
 
 const PROJECTS = [
-  { img: g1, title: "Dom jednorodzinny — Jeżowe", desc: "Blachodachówka 180 m², kolor RAL 7016", tag: "Przed / po" },
-  { img: g2, title: "Hala produkcyjna — Rzeszów", desc: "Mycie i malowanie 2 400 m² blachy trapezowej", tag: "Przemysł" },
-  { img: g3, title: "Silos — Stalowa Wola", desc: "Antykorozja i malowanie metodą dostępu linowego", tag: "Wysokościowe" },
-  { img: g1, title: "Dach dwuspadowy — Nisko", desc: "Renowacja pokrycia z blachy powlekanej", tag: "Przed / po" },
-  { img: g2, title: "Magazyn — Tarnów", desc: "Malowanie natryskowe konstrukcji i ścian", tag: "Przemysł" },
-  { img: g3, title: "Komin przemysłowy — Śląsk", desc: "Zabezpieczenie antykorozyjne na wysokości", tag: "Wysokościowe" },
+  { img: a01.url, title: "Malowanie dachu — dom jednorodzinny", desc: "Renowacja blachodachówki metodą natrysku", tag: "Przed / po" },
+  { img: a02.url, title: "Odnowiony dach spadzisty", desc: "Mycie, gruntowanie i dwie warstwy farby", tag: "Realizacja" },
+  { img: a03.url, title: "Dach z blachy trapezowej", desc: "Zabezpieczenie antykorozyjne i malowanie", tag: "Antykorozja" },
+  { img: a04.url, title: "Renowacja pokrycia dachowego", desc: "Kompleksowe malowanie natryskowe", tag: "Realizacja" },
+  { img: a05.url, title: "Dach domu po malowaniu", desc: "Trwały kolor i ochrona przed korozją", tag: "Przed / po" },
+  { img: a06.url, title: "Malowanie dachu budynku gospodarczego", desc: "Mycie ciśnieniowe i malowanie", tag: "Realizacja" },
+  { img: a07.url, title: "Dach wielospadowy", desc: "Natrysk hydrodynamiczny, równa powłoka", tag: "Realizacja" },
+  { img: a08.url, title: "Blachodachówka po renowacji", desc: "Odświeżenie koloru bez wymiany pokrycia", tag: "Przed / po" },
+  { img: a09.url, title: "Malowanie dachu — prace na wysokości", desc: "Bezpieczne prace wysokościowe", tag: "Wysokościowe" },
+  { img: a10.url, title: "Dach obiektu użytkowego", desc: "Duża powierzchnia, malowanie natryskowe", tag: "Przemysł" },
+  { img: a11.url, title: "Odnowiona połać dachowa", desc: "Czyszczenie, grunt antykorozyjny, farba", tag: "Realizacja" },
+  { img: a12.url, title: "Efekt końcowy malowania dachu", desc: "Gotowa realizacja Mr-Spray", tag: "Przed / po" },
 ];
 
 function RealizacjePage() {
