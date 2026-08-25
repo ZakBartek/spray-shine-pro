@@ -2,18 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Reveal } from "@/components/site/Reveal";
-import a01 from "@/assets/realizacje/realizacja-01.webp.asset.json";
-import a02 from "@/assets/realizacje/realizacja-02.webp.asset.json";
-import a03 from "@/assets/realizacje/realizacja-03.webp.asset.json";
-import a04 from "@/assets/realizacje/realizacja-04.webp.asset.json";
-import a05 from "@/assets/realizacje/realizacja-05.webp.asset.json";
-import a06 from "@/assets/realizacje/realizacja-06.webp.asset.json";
-import a07 from "@/assets/realizacje/realizacja-07.webp.asset.json";
-import a08 from "@/assets/realizacje/realizacja-08.webp.asset.json";
-import a09 from "@/assets/realizacje/realizacja-09.webp.asset.json";
-import a10 from "@/assets/realizacje/realizacja-10.webp.asset.json";
-import a11 from "@/assets/realizacje/realizacja-11.webp.asset.json";
-import a12 from "@/assets/realizacje/realizacja-12.webp.asset.json";
+import a01 from "@/assets/realizacje/dach-01.jpg.asset.json";
+import a02 from "@/assets/realizacje/dach-02.jpg.asset.json";
+import a03 from "@/assets/realizacje/dach-03.jpg.asset.json";
+import a04 from "@/assets/realizacje/dach-04.jpg.asset.json";
+import a05 from "@/assets/realizacje/dach-05.jpg.asset.json";
+import a06 from "@/assets/realizacje/dach-06.jpg.asset.json";
+import a07 from "@/assets/realizacje/dach-07.jpg.asset.json";
+import a08 from "@/assets/realizacje/dach-08.jpg.asset.json";
+import a09 from "@/assets/realizacje/dach-09.jpg.asset.json";
+import a10 from "@/assets/realizacje/dach-10.jpg.asset.json";
+import a11 from "@/assets/realizacje/dach-11.jpg.asset.json";
+import a12 from "@/assets/realizacje/dach-12.jpg.asset.json";
 
 export const Route = createFileRoute("/realizacje")({
   head: () => ({
