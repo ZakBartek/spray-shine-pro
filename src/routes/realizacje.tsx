@@ -39,12 +39,18 @@ export const Route = createFileRoute("/realizacje")({
 });
 
 const PROJECTS = [
-  { img: g1, title: "Dom jednorodzinny — Jeżowe", desc: "Blachodachówka 180 m², kolor RAL 7016", tag: "Przed / po" },
-  { img: g2, title: "Hala produkcyjna — Rzeszów", desc: "Mycie i malowanie 2 400 m² blachy trapezowej", tag: "Przemysł" },
-  { img: g3, title: "Silos — Stalowa Wola", desc: "Antykorozja i malowanie metodą dostępu linowego", tag: "Wysokościowe" },
-  { img: g1, title: "Dach dwuspadowy — Nisko", desc: "Renowacja pokrycia z blachy powlekanej", tag: "Przed / po" },
-  { img: g2, title: "Magazyn — Tarnów", desc: "Malowanie natryskowe konstrukcji i ścian", tag: "Przemysł" },
-  { img: g3, title: "Komin przemysłowy — Śląsk", desc: "Zabezpieczenie antykorozyjne na wysokości", tag: "Wysokościowe" },
+  { img: a01.url, title: "Malowanie dachu — dom jednorodzinny", desc: "Renowacja blachodachówki metodą natrysku", tag: "Przed / po" },
+  { img: a02.url, title: "Odnowiony dach spadzisty", desc: "Mycie, gruntowanie i dwie warstwy farby", tag: "Realizacja" },
+  { img: a03.url, title: "Dach z blachy trapezowej", desc: "Zabezpieczenie antykorozyjne i malowanie", tag: "Antykorozja" },
+  { img: a04.url, title: "Renowacja pokrycia dachowego", desc: "Kompleksowe malowanie natryskowe", tag: "Realizacja" },
+  { img: a05.url, title: "Dach domu po malowaniu", desc: "Trwały kolor i ochrona przed korozją", tag: "Przed / po" },
+  { img: a06.url, title: "Malowanie dachu budynku gospodarczego", desc: "Mycie ciśnieniowe i malowanie", tag: "Realizacja" },
+  { img: a07.url, title: "Dach wielospadowy", desc: "Natrysk hydrodynamiczny, równa powłoka", tag: "Realizacja" },
+  { img: a08.url, title: "Blachodachówka po renowacji", desc: "Odświeżenie koloru bez wymiany pokrycia", tag: "Przed / po" },
+  { img: a09.url, title: "Malowanie dachu — prace na wysokości", desc: "Bezpieczne prace wysokościowe", tag: "Wysokościowe" },
+  { img: a10.url, title: "Dach obiektu użytkowego", desc: "Duża powierzchnia, malowanie natryskowe", tag: "Przemysł" },
+  { img: a11.url, title: "Odnowiona połać dachowa", desc: "Czyszczenie, grunt antykorozyjny, farba", tag: "Realizacja" },
+  { img: a12.url, title: "Efekt końcowy malowania dachu", desc: "Gotowa realizacja Mr-Spray", tag: "Przed / po" },
 ];
 
 function RealizacjePage() {
