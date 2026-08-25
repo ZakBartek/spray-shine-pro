@@ -13,6 +13,8 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as OFirmieRouteImport } from './routes/o-firmie'
 import { Route as RealizacjeRouteImport } from './routes/realizacje'
+import { Route as UslugiIndexRouteImport } from './routes/uslugi.index'
+import { Route as UslugiSlugRouteImport } from './routes/uslugi.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,18 +36,32 @@ const RealizacjeRoute = RealizacjeRouteImport.update({
   path: '/realizacje',
   getParentRoute: () => rootRouteImport,
 } as any)
+const UslugiIndexRoute = UslugiIndexRouteImport.update({
+  id: '/uslugi/',
+  path: '/uslugi/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UslugiSlugRoute = UslugiSlugRouteImport.update({
+  id: '/uslugi/$slug',
+  path: '/uslugi/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
   '/o-firmie': typeof OFirmieRoute
   '/realizacje': typeof RealizacjeRoute
+  '/uslugi/$slug': typeof UslugiSlugRoute
+  '/uslugi/': typeof UslugiIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
   '/o-firmie': typeof OFirmieRoute
   '/realizacje': typeof RealizacjeRoute
+  '/uslugi/$slug': typeof UslugiSlugRoute
+  '/uslugi': typeof UslugiIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +69,29 @@ export interface FileRoutesById {
   '/kontakt': typeof KontaktRoute
   '/o-firmie': typeof OFirmieRoute
   '/realizacje': typeof RealizacjeRoute
+  '/uslugi/$slug': typeof UslugiSlugRoute
+  '/uslugi/': typeof UslugiIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/kontakt' | '/o-firmie' | '/realizacje'
+  fullPaths:
+    | '/'
+    | '/kontakt'
+    | '/o-firmie'
+    | '/realizacje'
+    | '/uslugi/$slug'
+    | '/uslugi/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/kontakt' | '/o-firmie' | '/realizacje'
-  id: '__root__' | '/' | '/kontakt' | '/o-firmie' | '/realizacje'
+  to:
+    '/' | '/kontakt' | '/o-firmie' | '/realizacje' | '/uslugi/$slug' | '/uslugi'
+  id:
+    | '__root__'
+    | '/'
+    | '/kontakt'
+    | '/o-firmie'
+    | '/realizacje'
+    | '/uslugi/$slug'
+    | '/uslugi/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,6 +99,8 @@ export interface RootRouteChildren {
   KontaktRoute: typeof KontaktRoute
   OFirmieRoute: typeof OFirmieRoute
   RealizacjeRoute: typeof RealizacjeRoute
+  UslugiSlugRoute: typeof UslugiSlugRoute
+  UslugiIndexRoute: typeof UslugiIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -99,6 +133,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RealizacjeRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/uslugi/': {
+      id: '/uslugi/'
+      path: '/uslugi'
+      fullPath: '/uslugi/'
+      preLoaderRoute: typeof UslugiIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/uslugi/$slug': {
+      id: '/uslugi/$slug'
+      path: '/uslugi/$slug'
+      fullPath: '/uslugi/$slug'
+      preLoaderRoute: typeof UslugiSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -107,6 +155,8 @@ const rootRouteChildren: RootRouteChildren = {
   KontaktRoute: KontaktRoute,
   OFirmieRoute: OFirmieRoute,
   RealizacjeRoute: RealizacjeRoute,
+  UslugiSlugRoute: UslugiSlugRoute,
+  UslugiIndexRoute: UslugiIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
