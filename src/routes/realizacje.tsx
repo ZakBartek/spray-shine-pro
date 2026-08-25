@@ -2,18 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Reveal } from "@/components/site/Reveal";
-import a01 from "@/assets/realizacje/realizacja-01.webp.asset.json";
-import a02 from "@/assets/realizacje/realizacja-02.webp.asset.json";
-import a03 from "@/assets/realizacje/realizacja-03.webp.asset.json";
-import a04 from "@/assets/realizacje/realizacja-04.webp.asset.json";
-import a05 from "@/assets/realizacje/realizacja-05.webp.asset.json";
-import a06 from "@/assets/realizacje/realizacja-06.webp.asset.json";
-import a07 from "@/assets/realizacje/realizacja-07.webp.asset.json";
-import a08 from "@/assets/realizacje/realizacja-08.webp.asset.json";
-import a09 from "@/assets/realizacje/realizacja-09.webp.asset.json";
-import a10 from "@/assets/realizacje/realizacja-10.webp.asset.json";
-import a11 from "@/assets/realizacje/realizacja-11.webp.asset.json";
-import a12 from "@/assets/realizacje/realizacja-12.webp.asset.json";
+import a01 from "@/assets/realizacje/dach-01.jpg.asset.json";
+import a02 from "@/assets/realizacje/dach-02.jpg.asset.json";
+import a03 from "@/assets/realizacje/dach-03.jpg.asset.json";
+import a04 from "@/assets/realizacje/dach-04.jpg.asset.json";
+import a05 from "@/assets/realizacje/dach-05.jpg.asset.json";
+import a06 from "@/assets/realizacje/dach-06.jpg.asset.json";
+import a07 from "@/assets/realizacje/dach-07.jpg.asset.json";
+import a08 from "@/assets/realizacje/dach-08.jpg.asset.json";
+import a09 from "@/assets/realizacje/dach-09.jpg.asset.json";
+import a10 from "@/assets/realizacje/dach-10.jpg.asset.json";
+import a11 from "@/assets/realizacje/dach-11.jpg.asset.json";
+import a12 from "@/assets/realizacje/dach-12.jpg.asset.json";
 
 export const Route = createFileRoute("/realizacje")({
   head: () => ({
@@ -39,18 +39,18 @@ export const Route = createFileRoute("/realizacje")({
 });
 
 const PROJECTS = [
-  { img: a01.url, title: "Malowanie dachu — dom jednorodzinny", desc: "Renowacja blachodachówki metodą natrysku", tag: "Przed / po" },
-  { img: a02.url, title: "Odnowiony dach spadzisty", desc: "Mycie, gruntowanie i dwie warstwy farby", tag: "Realizacja" },
-  { img: a03.url, title: "Dach z blachy trapezowej", desc: "Zabezpieczenie antykorozyjne i malowanie", tag: "Antykorozja" },
-  { img: a04.url, title: "Renowacja pokrycia dachowego", desc: "Kompleksowe malowanie natryskowe", tag: "Realizacja" },
-  { img: a05.url, title: "Dach domu po malowaniu", desc: "Trwały kolor i ochrona przed korozją", tag: "Przed / po" },
-  { img: a06.url, title: "Malowanie dachu budynku gospodarczego", desc: "Mycie ciśnieniowe i malowanie", tag: "Realizacja" },
-  { img: a07.url, title: "Dach wielospadowy", desc: "Natrysk hydrodynamiczny, równa powłoka", tag: "Realizacja" },
-  { img: a08.url, title: "Blachodachówka po renowacji", desc: "Odświeżenie koloru bez wymiany pokrycia", tag: "Przed / po" },
-  { img: a09.url, title: "Malowanie dachu — prace na wysokości", desc: "Bezpieczne prace wysokościowe", tag: "Wysokościowe" },
-  { img: a10.url, title: "Dach obiektu użytkowego", desc: "Duża powierzchnia, malowanie natryskowe", tag: "Przemysł" },
-  { img: a11.url, title: "Odnowiona połać dachowa", desc: "Czyszczenie, grunt antykorozyjny, farba", tag: "Realizacja" },
-  { img: a12.url, title: "Efekt końcowy malowania dachu", desc: "Gotowa realizacja Mr-Spray", tag: "Przed / po" },
+  { img: a01.url, title: "Dach domu jednorodzinnego — czerwień", desc: "Lewa strona przed, prawa po malowaniu natryskowym", tag: "Przed / po" },
+  { img: a02.url, title: "Blachodachówka grafitowa po renowacji", desc: "Zestawienie starej, zmatowiałej powłoki i nowej", tag: "Przed / po" },
+  { img: a03.url, title: "Malowanie dachu spadzistego", desc: "Natrysk hydrodynamiczny w asekuracji", tag: "Realizacja" },
+  { img: a04.url, title: "Dach z blachodachówki — grafit", desc: "Efekt po dwóch warstwach farby nawierzchniowej", tag: "Realizacja" },
+  { img: a05.url, title: "Dach wielospadowy z góry", desc: "Równa powłoka na całej połaci, kolor ceglasty", tag: "Realizacja" },
+  { img: a06.url, title: "Mycie ciśnieniowe dachu", desc: "Usuwanie mchu i nalotów przed malowaniem", tag: "Realizacja" },
+  { img: a07.url, title: "Prace wysokościowe na dachu", desc: "Malowanie połaci w dostępie linowym", tag: "Wysokościowe" },
+  { img: a08.url, title: "Blacha trapezowa po malowaniu", desc: "Trwała powłoka antykorozyjna w kolorze czerwonym", tag: "Realizacja" },
+  { img: a09.url, title: "Dach budynku gospodarczego", desc: "Renowacja pokrycia z blachy falistej", tag: "Realizacja" },
+  { img: a10.url, title: "Dach falisty — metamorfoza", desc: "Skorodowana połać i ta sama połać po renowacji", tag: "Przed / po" },
+  { img: a11.url, title: "Gruntowanie antykorozyjne połaci", desc: "Etap przygotowania dachu do malowania", tag: "Realizacja" },
+  { img: a12.url, title: "Gotowy dach w kolorze antracytu", desc: "Efekt końcowy widoczny z ulicy", tag: "Realizacja" },
 ];
 
 function RealizacjePage() {
