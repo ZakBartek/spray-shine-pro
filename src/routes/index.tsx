@@ -149,11 +149,10 @@ function Home() {
                 wyprowadzania się z domu na czas remontu.
               </p>
               <p>
-                Pracujemy na terenie województw <strong>podkarpackiego</strong>,{" "}
-                <strong>małopolskiego</strong> i <strong>śląskiego</strong>, obsługując zarówno domy
-                jednorodzinne, jak i budynki gospodarcze, hale przemysłowe, magazyny i obiekty
-                użyteczności publicznej. Każde zlecenie rozpoczynamy od bezpłatnych oględzin i
-                konkretnej, pisemnej wyceny — bez ukrytych kosztów i bez zobowiązań.
+                Pracujemy na terenie całej Polski, obsługując zarówno domy jednorodzinne, jak i budynki
+                gospodarcze, hale przemysłowe, magazyny i obiekty użyteczności publicznej. Każde zlecenie
+                rozpoczynamy od bezpłatnych oględzin i konkretnej, pisemnej wyceny — bez ukrytych kosztów
+                i bez zobowiązań.
               </p>
             </div>
           </Reveal>
